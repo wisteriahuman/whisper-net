@@ -1,5 +1,7 @@
+import "@/app/globals.css";
 import { ReactNode } from "react";
-import Header from "@/components/layout/Header";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -12,13 +14,11 @@ export default function Layout({ children }: { children: ReactNode }) {
         </head>
         <body>
           <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="container flex flex-1 justify-center mx-auto px-5 max-w-screeen-lg">
+            <Navigation />
+            <main className="container flex flex-1 justify-center mx-auto px-5 max-w-screen-lg">
               {children}
             </main>
-            <footer className="flex items-center justify-center w-full h-20 text-sm border-t">
-              © 2025 Whisteria
-            </footer>
+            <Footer />
           </div>
         </body>
       </html>
