@@ -1,9 +1,13 @@
+import Head from 'next/head';
+
 export default function Home() {
   return(
-    <>
-      <h1 className="text-9xl flex justify-center h-screen-items-center text-indigo-500">
-        Hello World
-      </h1>
-    </>
+    <div>
+      <Head>
+        <title>Whisper-Net | Home</title>
+      </Head>
+      <div className="mb-10 p-3 border rounded">
+      </div>
+    </div>
   );
 }
