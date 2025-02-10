@@ -1,5 +1,4 @@
 import "@/app/globals.css";
-import Image from 'next/image';
 import { ReactNode } from "react";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
@@ -14,8 +13,6 @@ export default function Layout({ children }: { children: ReactNode }) {
           <title>Whisper-net</title>
         </head>
         <body>
-          <div className="absolute inset-0 -z-10 bg-black opacity-30" />
-
           <div className="flex flex-col min-h-screen">
             <Navigation />
             <main className="container flex flex-1 justify-center mx-auto px-5 max-w-screen-lg">

@@ -1,14 +1,6 @@
 import { NextResponse } from 'next/server';
 import { SERVERURL } from '@/common/urls';
-
-interface Post {
-    id: number;
-    title: string;
-    image: string;
-    content: string;
-    created_at: string;
-    update_at: string;
-}
+import { Post } from '@/common/interfaces';
 
 export async function GET() {
     try {

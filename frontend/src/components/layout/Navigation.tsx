@@ -7,7 +7,7 @@ export default function Navigation() {
                 Whisper-Net
             </Link>
             <nav className="ml-auto">
-                <Link href="/about" className="mr-5 text-white">
+                <Link href="/about" className="mr-5 text-black">
                     About
                 </Link>
             </nav>
