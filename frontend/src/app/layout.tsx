@@ -14,14 +14,6 @@ export default function Layout({ children }: { children: ReactNode }) {
           <title>Whisper-net</title>
         </head>
         <body>
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src="/images/background.jpg"
-              alt="Background"
-              fill
-              className="object-cover"
-            />
-          </div>
           <div className="absolute inset-0 -z-10 bg-black opacity-30" />
 
           <div className="flex flex-col min-h-screen">
